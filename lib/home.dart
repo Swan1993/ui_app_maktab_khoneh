@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:ui_app_maktabkhoneh/const/constant.dart';
-import 'package:ui_app_maktabkhoneh/model/circle_avatar_model.dart';
+
 import 'package:ui_app_maktabkhoneh/screen/user_info.dart';
 
 class Home extends StatelessWidget {
