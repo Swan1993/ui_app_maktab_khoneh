@@ -24,9 +24,12 @@ const double bodymargin = 20.0;
 
 class Constant {
   static const avatarTextStyle = TextStyle(
+    color: titleColor,
     fontSize: medium,
   );
   static const avatarTextStyleName = TextStyle(
-    fontSize: 16.0,
-  );
+      color: captionColor, fontSize: 16.0, fontWeight: FontWeight.w700);
+
+  static const avatarTextStyleNameLite = TextStyle(
+      color: Colors.white, fontSize: 16.0, fontWeight: FontWeight.w700);
 }
