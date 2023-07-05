@@ -35,4 +35,10 @@ class Constant {
 
   static const textSearchBar =
       TextStyle(color: surfaceTextColor, fontWeight: FontWeight.w700);
+
+  static const textStyleCeterPic = TextStyle(
+      color: Colors.white, fontSize: 24.0, fontWeight: FontWeight.bold);
+
+  static const textStyleCeterT2 = TextStyle(
+      color: Colors.white, fontSize: 14.0, fontWeight: FontWeight.normal);
 }

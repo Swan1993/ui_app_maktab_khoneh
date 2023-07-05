@@ -1,11 +1,9 @@
 //lib
 import 'package:flutter/material.dart';
 
-import 'package:fan_carousel_image_slider/fan_carousel_image_slider.dart';
-
 //const
 import 'package:ui_app_maktabkhoneh/const/constant.dart';
-import 'package:ui_app_maktabkhoneh/const/list_country.dart';
+import 'package:ui_app_maktabkhoneh/screen/slider.dart';
 
 //widget
 import 'package:ui_app_maktabkhoneh/screen/user_info.dart';
@@ -16,15 +14,16 @@ class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: scaffoldBackgroundColor,
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: SizedBox(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const UserInfo(),
-              const Align(
+              UserInfo(),
+              Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
                   padding: EdgeInsets.only(left: bodymargin),
@@ -34,19 +33,9 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
-              const ArticlesView(),
-              const SearchBox(),
-              FanCarouselImageSlider(
-                imagesLink:
-                    contryList.map((item) => item['image'] as String).toList(),
-                isAssets: true,
-                autoPlay: false,
-                imageRadius: large,
-                sliderHeight: MediaQuery.of(context).size.height * 0.4,
-                expandedCloseBtn: const Text("data"),
-                initalPageIndex: 2,
-                showIndicator: false,
-              ),
+              ArticlesView(),
+              SearchBox(),
+              SliderCarousel(),
             ],
           ),
         ),
