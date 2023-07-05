@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 //const color
 const scaffoldBackgroundColor = Color.fromRGBO(252, 239, 227, 1);
-const searchBarColor = Color.fromRGBO(252, 239, 227, 1);
+const searchBarColor = Color.fromRGBO(250, 229, 210, 1);
 const titleColor = Color.fromRGBO(50, 31, 14, 1);
 const captionColor = Color.fromRGBO(50, 31, 14, 0.5);
 const surfaceTextColor = Color.fromRGBO(237, 167, 126, 1);
@@ -32,4 +32,7 @@ class Constant {
 
   static const avatarTextStyleNameLite = TextStyle(
       color: Colors.white, fontSize: 16.0, fontWeight: FontWeight.w700);
+
+  static const textSearchBar =
+      TextStyle(color: surfaceTextColor, fontWeight: FontWeight.w700);
 }
