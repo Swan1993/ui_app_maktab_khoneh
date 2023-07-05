@@ -8,10 +8,14 @@ const captionColor = Color.fromRGBO(50, 31, 14, 0.5);
 const surfaceTextColor = Color.fromRGBO(237, 167, 126, 1);
 const selectBtmNavColor = Color.fromRGBO(0, 0, 0, 1);
 const unSelectBtmNavColor = Color.fromRGBO(32, 14, 50, 1);
-const primaryColor = Color.fromRGBO(251, 146, 10, 1);
+const primaryColor = Color.fromRGBO(251, 146, 40, 1);
 List<Color> gradiantColor = [
   primaryColor,
-  const Color.fromRGBO(254, 502, 47, 1),
+  const Color.fromRGBO(254, 202, 47, 1),
+];
+List<Color> bottomNavgradiantColor = [
+  const Color.fromRGBO(250, 122, 15, 1),
+  primaryColor,
 ];
 
 //standard size
